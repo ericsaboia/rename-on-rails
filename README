@@ -1,0 +1,10 @@
+Pesquisando esses dias, descobri que não existe um comando pra renomear uma app rails.
+
+Renomear a pasta funciona, mas mesmo assim existem vários arquivos que referenciam o nome do projeto dentro do código.
+
+Para contornar isso, fiz esse pequeno projeto que:
+	1 - varre todos os arquivos .rb e .ru dentro de um projeto rails, renomeando do nome atual para o novo nome.
+	2 - renomeia para o novo nome do projeto
+
+Para executar:
+rake rename_rails path_do_projeto_rails novo_nome
